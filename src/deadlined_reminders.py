@@ -9,7 +9,7 @@ from dateutil.parser import parse
 from datetime import datetime
 
 
-class DeadlinedMetaReminder(Iterable, ABCMeta):
+class DeadlinedMetaReminder():
     @abstractmethod
     def is_due():
         pass
