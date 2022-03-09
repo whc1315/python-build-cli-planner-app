@@ -9,15 +9,22 @@ from dateutil.parser import parse
 from datetime import datetime
 
 
-class DeadlinedMetaReminder():
+class DeadlinedMetaReminder(Iterable, metaclass=ABCMeta):
+    def __init__(self):
+        self.Iterable = Iterable
+
     @abstractmethod
-    def is_due():
+    def is_due(self):
         pass
 
 
 class DeadlinedReminder(Iterable, ABC):
+    def __init__(self):
+        self.Iterable = Iterable
+        self.ABC = ABC
+
     @abstractmethod
-    def is_due():
+    def is_due(self):
         pass
 
 
