@@ -11,30 +11,38 @@ This project requires `python3.8` or higher. Once you have this installed, follo
 Note that you may have to use `python3` instead of `python` depending on how you have installed python.
 
 First, regardless of your platform, open up a terminal and navigate to the project directory:
+
 ```
 $ cd <path/to/project/root>
 ```
 
 Then, create a virtual environment `reminders-venv`:
+
 ```
 $ python -m venv reminders-venv
 ```
+
 You will have to use this whenever you want to work on this project, to ensure that you have the right dependencies.
 To activate your environment, run:
 
 - Windows
+
 ```
 > reminders-venv\Scripts\activate.bat
 ```
+
 - macOS / Linux
+
 ```
 $ source reminders-venv/bin/activate
 ```
-Please ensure that your shell confirms the activation of the virtual environment before proceeding. This typically means that the shell displays something similar to ```(reminders-venv)``` at the beginning of each line.
+
+Please ensure that your shell confirms the activation of the virtual environment before proceeding. This typically means that the shell displays something similar to `(reminders-venv)` at the beginning of each line.
 
 Then, if you need to work on a different project, you can deactivate your environment by running `deactivate` at the command prompt.
 
 Finally, install the dependencies:
+
 ```
 python -m pip install -r requirements.txt
 ```
@@ -44,13 +52,15 @@ If you see a warning about `pip` being outdated, that's OK; `pip` updates freque
 ## Verify Setup
 
 At the root of your project, run
+
 ```
 $ pytest
 ```
+
 You should see all tests failing in the beginning, but no error about `pytest` itself. If so, you are ready to start making your app.
 
 As you progress through the tasks you can re-run the above command to check the tasks. The error messages should give you a hint as to why a test is failing.
 
 ## Previewing Your Work
 
-Start playing with your app by running `python app.py`. Try adding a couple of reminders such as `Drink water` and `Complete the Reminders project`.  :)
+Start playing with your app by running `python app.py`. Try adding a couple of reminders such as `Drink water` and `Complete the Reminders project`. :)
