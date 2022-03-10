@@ -1,8 +1,10 @@
 from abc import ABCMeta, abstractmethod
+from cgitb import text
 
 from collections.abc import Iterable
 
 from abc import ABC
+from xmlrpc.client import _iso8601_format
 
 from dateutil.parser import parse
 
@@ -35,3 +37,6 @@ class DateReminder(DeadlinedReminder):
 
     def is_due(self):
         return self.date <= datetime.now()
+
+    def __iter__(self):
+        return iter([self.text, self.date.isoformat()])
