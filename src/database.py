@@ -1,8 +1,8 @@
 import csv
 
-from .reminder import PoliteReminder
+from src.reminder import PoliteReminder
 
-from .deadlined_reminders import DateReminder
+from src.deadlined_reminders import DateReminder
 
 
 def list_reminders():
